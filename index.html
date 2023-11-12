@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the void</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Autor: Adam Kaňa -->
+    <!-- kanaadam@email.cz -->
+    <!-- Discord: Adam K. -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#cast">Cast</a>
+                </li>
+                <li>
+                    <a href="#trailer">Trailer</a>
+                </li>
+                <li>
+                    <a href="#gallery">Gallery</a>
+                </li>
+                <li>
+                    <a href="#newsletter">Newsletter</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="hero-img-wrapper" id="top">
+            <img  class="hero-image" src="./img/hero-img.jpg" alt="Interstellar movie poster">
+        </div>
+        <div class="hero-logo-wrapper">
+            <img src="img/Interstellar-logo.png" alt="Interstellar movie logo" class="hero-logo">
+        </div>
+    </section>
+
+    <div class="content-container">
+        <section id="about">
+            <div class="about">
+                <h2>About</h2>
+                <p class="about-text">Interstellar is a 2014 epic science fiction film co-written, directed, and produced by Christopher Nolan. It stars Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, Matt Damon, and Michael Caine. Set in a dystopian future where humanity is embroiled in a catastrophic blight and famine, the film follows a group of astronauts who travel through a wormhole near Saturn in search of a new home for humankind.</p>
+                <br>
+                <p>Brothers Christopher and Jonathan Nolan wrote the screenplay, which had its origins in a script Jonathan developed in 2007 and was originally set to be directed by Steven Spielberg. Kip Thorne, a Caltech theoretical physicist and 2017 Nobel laureate in Physics, was an executive producer, acted as a scientific consultant, and wrote a tie-in book, The Science of Interstellar. Cinematographer Hoyte van Hoytema shot it on 35 mm movie film in the Panavision anamorphic format and IMAX 70 mm. Principal photography began in late 2013 and took place in Alberta, Iceland, and Los Angeles. Interstellar uses extensive practical and miniature effects, and the company Double Negative created additional digital effects.</p>
+            </div>
+        </section>
+
+        <section id="cast" class="cast">
+            <h2>Cast</h2>
+            <div class="cast-flexbox">
+                <div class="cast-flex-item">
+                    <img class="cast-portrait" src="./img/cooper-portrait.jpg" alt="Matthew McConaughey portrait">
+                    <h4>Matthew McConaughey</h4>
+                    <h5>Joseph Cooper</h5>
+                </div>
+
+                <div class="cast-flex-item">
+                    <img class="cast-portrait" src="./img/murph-portrait.jpg" alt="Jessica Chastain portrait">
+                    <h4>Jessica Chastain</h4>
+                    <h5>Murph Cooper</h5>
+                </div>
+
+                <div class="cast-flex-item">
+                    <img class="cast-portrait" src="./img/amelia-portrait.jpg" alt="Anne Hathaway portrait">
+                    <h4>Anne Hathaway</h4>
+                    <h5>Amelia Brand</h5>
+                </div>
+
+                <div class="cast-flex-item">
+                    <img class="cast-portrait" src="./img/prof-brand-portrait.jpg" alt="Michael Caine portrait">
+                    <h4>Michael Caine</h4>
+                    <h5>Professor Brand</h5>
+                </div>
+
+                <div class="cast-flex-item">
+                    <img class="cast-portrait" src="./img/dr-mann-portrait.jpg" alt="Matt Damon portrait">
+                    <h4>Matt Damon</h4>
+                    <h5>Dr. Mann</h5>
+                </div>
+        </section>
+        
+        <section id="trailer">
+            <h2>Trailer</h2>
+            <div class="iframe-wrapper">
+                <iframe class="trailer-iframe" width=80% height="315" src="https://www.youtube.com/embed/4T4wxDnTYLg?si=d9G0U79bIGaNAkDq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-flexbox">
+                <div class="gallery-flex-item">
+                    <img src="./img/gallery1.jpg" alt="Spacecraft nearing a black hole" class="gallery-img">
+                </div>
+                <div class="gallery-flex-item">
+                    <img src="./img/gallery2.jpg" alt="Amelia Brand in a spacesuit" class="gallery-img">
+                </div>
+                <div class="gallery-flex-item">
+                    <img src="./img/gallery3.png" alt="Joseph Cooper talking to his daughter" class="gallery-img">
+                </div>
+                <div class="gallery-flex-item">
+                    <img src="./img/gallery4.png" alt="Old man sweeping dust in a dystopic Earth landscape" class="gallery-img">
+                </div>
+                <div class="gallery-flex-item">
+                    <img src="./img/gallery5.jpg" alt="Amelia Brand with another astronaut in the cockpit" class="gallery-img">
+                </div>
+                <div class="gallery-flex-item">
+                    <img src="./img/gallery6.jpg" alt="Joseph Cooper in space shuttle" class="gallery-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <h2>Sign up for email updates!</h2>
+            <div class="email-flex">
+                <div class="input-box1">
+                    <input type="text" class="email1" placeholder="Enter your email">
+                </div>
+                <form class="input-box2">
+                    <input type="text" class="email2" placeholder="Enter your email again">
+                    <button class="email-btn" type="submit" disabled>Submit</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="navigate-top">
+        <a href="#top">
+            <img class="navigate-gif" src="./img/black-hole.gif" alt="animated black hole">
+        </a>
+    </div>
+    
+    <footer>
+        <p>©2023 Adam Kaňa</p>
+        <a href="mailto:kanaadam@email.cz">Contact</a>
+        <button id="light-dark-switch">Switch to light mode</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
