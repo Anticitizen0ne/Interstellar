@@ -1,18 +1,7 @@
 const navBar = document.querySelector(".navbar")
 const burgerMenu = document.querySelector(".hamburger")
 const navMenu = document.querySelector(".nav-menu")
-const galleryImages = document.querySelectorAll(".gallery-img")
 const navTopBtn = document.querySelector(".navigate-top")
-
-galleryImages.forEach((image) => {
-    image.addEventListener("mouseenter", () => {
-        image.style.transform = "scale(1.1)";
-    })
-
-    image.addEventListener("mouseleave", () => {
-        image.style.transform = "scale(1.0)";
-    })
-})
 
 burgerMenu.addEventListener("click", () => {
     navMenu.classList.toggle("active")
@@ -56,6 +45,18 @@ const formatCheck = () => {
     if (emailOneValue.match(emailPattern)) {
         emailTwo.disabled = false
         emailTwo.style.visibility = "visible"
+        textField.textContent = "Email is in correct format"
+        emailOneBox.classList.add("valid")
+    } else if (emailOneValue !== "" || !emailOneValue.match(emailPattern)) {
+            textField.textContent = "Email is in incorrect format"
+            emailOneBox.classList.add("invalid")
+            emailTwo.disabled = true
+            emailButton.disabled = true
+            emailOneBox.classList.remove("valid")
+            emailTwoBox.classList.remove("valid")
+            emailTwo.style.visibility = "hidden"
+            emailTwo.value = ""
+
     } else {
         emailTwo.disabled = true
         emailTwo.style.visibility = "hidden"
@@ -107,11 +108,9 @@ lightDarkBtn.addEventListener("click", () => {
     body.classList.toggle("light")
 
     if (body.classList.contains("light")) {
-        lightDarkBtn.textContent = "Switch to dark mode"
         heroLogo.src = "./img/Interstellar-logo-lightmode.png"
 
     } else {
-        lightDarkBtn.textContent = "Switch to light mode"
         heroLogo.src = "./img/Interstellar-logo.png"
     }
 })
